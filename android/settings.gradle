@@ -1,3 +1,5 @@
 rootProject.name = 'AwesomeProject'
+include ':react-native-aloha-test'
+project(':react-native-aloha-test').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-aloha-test/android')
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
 include ':app'
